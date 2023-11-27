@@ -1,0 +1,77 @@
+<div class="container">
+  <h2>Edit Lesson Package</h2>
+  <form>
+    <div class="row">
+      <div class="col-md-3">
+        <label for="title">Title</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="title" name="title" class="form-control">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label for="description">Description</label>
+      </div>
+      <div class="col-md-9">
+        <textarea id="description" name="description" class="form-control"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label for="category">Category</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="category" name="category"  class="form-control">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label for="level">Level</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="level" name="level"  class="form-control">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label for="prerequisite">Prerequisite</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="prerequisite" name="prerequisite"  class="form-control">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label for="tags">Tags</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="tags" name="tags"  class="form-control">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <label for="copyright">Copyright</label>
+      </div>
+      <div class="col-md-9">
+        <input type="text" id="copyright" name="copyright"  class="form-control">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <button type="submit" class="btn btn-primary" (click)="onClickSubmit()">Submit</button>
+        
+      </div>
+    </div>
+  </form>
+  <button class="btn btn-primary" [routerLink]="['/lesson', 1234 ]">Detail
+    for lesson 1234</button>
+</div>
+
