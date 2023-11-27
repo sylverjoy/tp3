@@ -1,1 +1,9 @@
-<p>lesson-list-page works!</p>
+<p>List of lessons</p>
+
+<ul>
+    <li *ngFor="let d of newdata">
+        {{d.title}} <button type="button" class="btn btn-outline-primary"(click)="onClickDelete(d.id)">Delete</button>
+    </li>
+</ul>
+
+<button type="button" class="btn btn-outline-primary"(click)="onClickRefresh()">Refresh</button>
